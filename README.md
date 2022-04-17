@@ -17,7 +17,7 @@ From that we can try to connect to the camera via Telnet:
 
 I didnt try to bruteforce it but the login admin and password admin didnt worked so I went ahead. 
 
-When I was looking at the hardware I noticed two marks on the mother board: Rx and Tx.
+When I was looking at the hardware I noticed two marks on the mother board: Rx and Tx. This two little ports are made to receive and send data.
 
 ![IMG-6992](https://user-images.githubusercontent.com/64932654/163731843-e46b4aca-fb68-499a-b7f3-3f6cf35c2ac2.jpg)
 
