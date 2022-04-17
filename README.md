@@ -26,3 +26,6 @@ When I was looking at the hardware I noticed two marks on the mother board: Rx a
  From that I was able to receive data from the camera via this script https://github.com/devttys0/baudrate/blob/master/baudrate.py made by devttys0.
  
  I will continue my explanation soon
+
+- [x] Connect via UART
+- [ ] Make a program to send data
