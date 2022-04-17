@@ -15,13 +15,13 @@ From that we can try to connect to the camera via Telnet:
 
 ![image_2022-04-17_192005782](https://user-images.githubusercontent.com/64932654/163725417-2a241acb-85a7-4565-808d-609476ccdb4f.png)
 
-I didnt try to bruteforce it but the login admin and password admin didnt worked so I went ahead. 
+> I didnt try to bruteforce it but the login admin and password admin didnt worked so I went ahead. 
 
 When I was looking at the hardware I noticed two marks on the mother board: Rx and Tx. This two little ports are made to receive and send data.
 
 ![IMG-6992](https://user-images.githubusercontent.com/64932654/163731843-e46b4aca-fb68-499a-b7f3-3f6cf35c2ac2.jpg)
 
- I took my UART to USB connector (https://letmeknow.fr/fr/convertisseurs/1673-convertisseur-uart-usb-cp2102--4894479454459.html) and I plugged the GND and the VCC to an arduino and I soldered the RX and the TX of the board to my connector.
+ I took my UART to USB connector ([(https://letmeknow.fr/fr/convertisseurs/1673-convertisseur-uart-usb-cp2102--4894479454459.html)]) and I plugged the GND and the VCC to an arduino and I soldered the RX and the TX of the board to my connector.
  
  From that I was able to receive data from the camera via this script https://github.com/devttys0/baudrate/blob/master/baudrate.py made by devttys0.
  
