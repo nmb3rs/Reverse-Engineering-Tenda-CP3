@@ -25,7 +25,14 @@ When I was looking at the hardware I noticed two marks on the mother board: Rx a
  
  From that I was able to receive data from the camera via this script https://github.com/devttys0/baudrate/blob/master/baudrate.py made by devttys0.
  
- I will continue my explanation soon
+ When we try to connect to the camera, at the third false try the camera send this data to the TX port:
+ 
+ ![image_2022-04-18_003230163](https://user-images.githubusercontent.com/64932654/163734678-1086a38c-2af8-42e5-bef4-e950d009c5a2.png)
+ I was able to determined that if the user that you have input does not exist on the machine it will say UNKNOWN (like in the screenshot)
+ but if it is a known user it will print the name of the user:
+ 
+ ![image](https://user-images.githubusercontent.com/64932654/163734724-88f6c9b3-1fe3-4c19-b781-2ed4ad42855f.png)
 
-- [x] Connect via UART
-- [ ] Make a program to send data
+> In both screenshot "pts/0" means pseudo terminal (the user logged in)
+
+We can now determine that the user for the camera is root.
