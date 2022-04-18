@@ -3,7 +3,7 @@
 
 Hello, today im going to teach  you how to reverse engineer your Tenda CP3 camera.
 
-First you need to connect your ip camera to your wifi. Then with Nmap (https://github.com/nmap/nmap) you can do a fast scan (nmap -F your_camera_ip)
+First you need to connect your ip camera to your wifi. Then with Nmap (https://github.com/nmap/nmap) you can enumerate the open ports on the camera. To do a scan the command is simply nmap ip_of_your_camera
 
 ![image_2022-04-17_191717940](https://user-images.githubusercontent.com/64932654/163725335-ca33bbaa-51ba-4e0a-96f0-bcd1ccd92082.png)
 
@@ -36,3 +36,5 @@ When I was looking at the hardware I noticed two marks on the mother board: Rx a
 > In both screenshot "pts/0" means pseudo terminal (the user logged in)
 
 We can now determine that the user for the camera is root.
+
+I will continue as soon as I will be able to make a working exploit.
